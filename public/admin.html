@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <a href="index.html" class="admin-button">⬅ Back to Site</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Login</h2>
+      <input type="email" id="adminEmail" placeholder="Admin Email" required />
+      <input type="password" id="adminPassword" placeholder="Admin Password" required />
+      <button id="login-btn">Login</button>
+      <button id="logout-btn" style="display:none;">Logout</button>
+      <p id="loginResponse" style="color:red;"></p>
+    </section>
+
+    <div id="messages" class="hidden"></div>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

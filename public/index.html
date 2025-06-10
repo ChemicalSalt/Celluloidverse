@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celluloidverse</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' https://www.gstatic.com https://www.google.com https://www.googleapis.com;
+  connect-src 'self' https://firestore.googleapis.com https://firebase.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com;
+  frame-src https://www.google.com/recaptcha/ https://recaptcha.google.com/;
+  style-src 'self' 'unsafe-inline';
+  img-src 'self' data:;
+">
+</head>
+<body>
+  <header>
+    <h1>CELLULOIDVERSE</h1>
+    <p>Your place for AI-generated content &amp; creative storytelling.</p>
+    <a href="admin.html" class="admin-button">🔐 Admin</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>This platform features content generated with the power of AI — stories, riddles and more.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact us</h2>
+      <form id="contact-form">
+        <input id="name" type="text" placeholder="Name" required />
+        <input id="email" type="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Message" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6LeYeVsrAAAAACumBwXihSnMhbOdINA8iSEdj2WG"></div>
+        <button type="submit">Send</button>
+      </form>
+      <p id="response" class="hidden"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Celluloidverse. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
